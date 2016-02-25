@@ -4958,12 +4958,18 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+  /*.jumbotron {
+background-image: url(/img/background.jpg);
+background-size: cover;
+height: 100%;}
+}
+*/
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #eee; 
 }
 .jumbotron h1,
 .jumbotron .h1 {
