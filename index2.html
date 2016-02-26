@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!--<html class="full" lang="en"> -->
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 <html>
-
 <head>
 
-	 <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -14,10 +15,18 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS 
+    <link href="css/full.css" rel="stylesheet"> -->
 
-<!-- IMPLEMENTATION OF FULLPAGE.JS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="css/fullPage.css">
+
+    <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
@@ -35,21 +44,21 @@
     <script type="text/javascript">
 
         $(document).ready(function() {
-    		$('#fullpage').fullpage({
-    		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+    $('#fullpage').fullpage({
 
-    		});
+            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+
+            });
         });
 
     </script>
-
-
 
 </head>
 
 <body>
 
-	<nav id = "menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <nav id = "menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -79,25 +88,37 @@
         <!-- /.container -->
     </nav>
 
-<div id="fullpage">
-        <div class="section" id = "section0"><h1>Welcome to VR</h1>
+    <!--Content -->
+
+ 
+        <div class="section">Some section
+            <div class = "container" >
+                <div class = "row" >
+                        <div class="col-xs-12 bg-content">
+                                <p> Hello </p>
+
+
+                        </div>
+                </div>
+            </div>
         </div>
 
-        <div class="section">Photos</div>
-        
-    </div>
+        <!--
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div> -->
 
 
 
+    <!-- Put your page content here! -->
 
+    
+
+  
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
 </body>
 
-
-
-
- </html>
+</html>

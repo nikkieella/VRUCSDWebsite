@@ -1,0 +1,11 @@
+#section0{
+		background-image: url(../img/background.jpg);
+		/*padding: 10% 0 0 0;*/
+		background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+
+	}
