@@ -1,6 +1,7 @@
+
 #section0{
 		background-image: url(../img/background.jpg);
-		/*padding: 10% 0 0 0;*/
+		padding: 10% 0 0 0;
 		background-repeat:no-repeat;
 -webkit-background-size:cover;
 -moz-background-size:cover;
@@ -9,3 +10,26 @@ background-size:cover;
 background-position:center;
 
 	}
+	
+	.slide{
+		background-size: cover;
+	}
+
+	#slide1{
+		background-image: url(../img/background.jpg);
+		
+		padding: 6% 0 0 0;
+	}
+
+
+	#slide2{
+		background-image: url(../img/background.jpg);
+		padding: 6% 0 0 0;
+	}
+
+	
+
+
+
+
+
