@@ -31,8 +31,9 @@ html {
 
 .secondnavbar
     {
-            top: 0px;
-            padding-top: 50px;
+            top: -20px;
+            padding-top: 40px;
+            padding-bottom: 30px;
     }
 
 
@@ -46,16 +47,26 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    background-image: url(../img/VR_Jobs.jpg);
+
+    padding: 20% 0 0 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    font-size: 35px;
+    color: white 
+    
+
 }
 
-.about-section {
+.internships-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
 }
 
-.services-section {
+.jobs-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
