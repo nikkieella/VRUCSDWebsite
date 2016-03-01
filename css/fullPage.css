@@ -1,15 +1,27 @@
 
 #section0{
 		background-image: url(../img/background.jpg);
-		padding: 10% 0 0 0;
+		padding: 30% 0 0 0;
 		background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		background-size:cover;
+		background-position:center;
+
+
 
 	}
+
+	h1 {
+		color: white;
+		padding: 0% 0 0 0;
+	}
+
+	#actions {
+
+		padding: 5% 0 0 0;*/
+		}
 	
 	.slide{
 		background-size: cover;
