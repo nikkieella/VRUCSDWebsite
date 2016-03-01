@@ -4,47 +4,72 @@
 	<body>
 
 		<div class="banner">
+		    <div class="banner-box">
+
 			<center><h1>MEDIA</h1></center>
+			</div>
 		</div>
 
 		<div class="media-column">
 
-			<div class="media-post">
-				<p class="media-title"><b>VR is amazing bruh</b></p>
+			<a class"media-link" href="http://www.theverge.com/2016/2/28/11127706/htc-vive-tilt-brush-vr-painting-demo"><div class="media-post">
+				<p class="media-title"><b>Painter of light: my awkward adventures in virtual reality art</b></p>
 				<div class="media-op-info">
 					<img class="media-op-img" src="img/kramer.jpg">
 					<div class="media-meta">
-						<span>Kramer Nicholson<br></span>
+						<span>Connor Smith<br></span>
 						<span>9 hours ago<br><br></span>
 					</div>
 				</div>
-				<p class="media-desc">The workshop today is going to be awesome! Come to see TONS of Virtual Reality projects, hardware, and input mechanisms... with a special appearance from the HTC Vive! Hope to see you there!</p>
-			</div>
+				<p class="media-desc">Now that the club has its very own HTC Vive, you can experience Tilt Brush as well!</p>
+				<b>Click to view</b>
+			</div></a>
 
-					<div class="media-post">
-				<p class="media-title"><b>VR is amazing bruh</b></p>
+					<a class"media-link" href="http://us11.campaign-archive2.com/?u=5bd962f264c36c7c209b2d92f&id=4ba3d43bd4"><div class="media-post">
+				<p class="media-title"><b>VR Club at UCSD Newsletter Week 8</b></p>
 				<div class="media-op-info">
 					<img class="media-op-img" src="img/kramer.jpg">
 					<div class="media-meta">
-						<span>Kramer Nicholson<br></span>
-						<span>9 hours ago<br><br></span>
+						<span>Sam Hessenauer<br></span>
+						<span>1 Week ago<br><br></span>
 					</div>
 				</div>
-				<p class="media-desc">The workshop today is going to be awesome! Come to see TONS of Virtual Reality projects, hardware, and input mechanisms... with a special appearance from the HTC Vive! Hope to see you there!</p>
-			</div>
+				<p class="media-desc">VR Club at UCSD Newsletter Week 8</p>
+				<b>Click to view</b>
+
+			</div></a>
 
 
-			<div class="media-post">
-				<p class="media-title"><b>VR is amazing bruh</b></p>
+			<a class"media-link" href="http://uploadvr.com/meta-2-ar-glasses-ted/"><div class="media-post">
+				<p class="media-title"><b>Meta Unveils Incredible Augmented Reality Headset at TED</b></p>
 				<div class="media-op-info">
 					<img class="media-op-img" src="img/kramer.jpg">
 					<div class="media-meta">
-						<span>Kramer Nicholson<br></span>
-						<span>9 hours ago<br><br></span>
+						<span>Anish Kannan<br></span>
+						<span>1 Week ago<br><br></span>
 					</div>
 				</div>
-				<p class="media-desc">The workshop today is going to be awesome! Come to see TONS of Virtual Reality projects, hardware, and input mechanisms... with a special appearance from the HTC Vive! Hope to see you there!</p>
+				<p class="media-desc">Here's some on stage demos of Meta's new augmented reality tech.</p>
+				<b>Click to view</b>
+
+			</div></a>
+
+			<a class"media-link" href="http://venturebeat.com/2016/02/10/unity-technologies-and-valve-team-up-to-make-vr-development-easier/"><div class="media-post">
+				<p class="media-title"><b>Unity Technologies and Valve team up to make VR development easier</b></p>
+				<div class="media-op-info">
+					<img class="media-op-img" src="img/kramer.jpg">
+					<div class="media-meta">
+						<span>Sam Hessenauer<br></span>
+						<span>2 Weeks ago<br><br></span>
+					</div>
+				</div>
+				<p class="media-desc">Unity and Valve are teaming up to make virtual reality development possible within virtual reality.</p>
+				<b>Click to view</b>
+
 			</div>
+			</a>
+
+			<p class="media-post">No more posts to show...</p>
 		</div>
 
 		<div class="hide-mobile archive">
@@ -52,24 +77,55 @@
 		</div>
 
 	 <style type="text/css">
+	 .media-title{
+	 	color:#34495E;
+
+	 }
+
+	 	.media-link{
+	 	color: black;
+
+	 	}
+
 		 *{
 		 	margin: 0;
 		 	padding: 0;
 		 }
+
+		 a:link {
+		 		 	color: black;
+
+    text-decoration: none;
+
+}
+
+a:visited {
+		 	color: black;
+
+    text-decoration: none;
+
+}
+
+a > .media-post:hover {
+	background-color: #eee;
+}
+
 
 	 	body{
 	 		background: #fafafa;
 	 	}
 
 	 	.banner{
-	 		background-image: url('img/media-banner.gif');
-	 		height: 25em;
-	 		margin-bottom: 2em;
+            margin-top: -4em;
+            display: table;
+            width: 100%;
+            background-image: url('img/media-banner.gif');
+            background-size: cover;
+            height: 35em;
+      	     margin-bottom: 2em;
 	 	}
 
-	 	.banner > center > h1{
-	 		color: white;
-	 	}
+
 
 	 	.media-column{
 	 		display: inline-block;
@@ -84,6 +140,8 @@
 	 		margin-right: 6em;
 	 		right: 0px;
 	 		margin-bottom: 2em;
+	 		display: none;
+
 	 	}
 
 	 	.archive{
@@ -98,7 +156,7 @@
 	 		padding: 1em;
 	 		background: white;
 	 		border-radius: 0.3em;
-	 		width: 40em;
+	 		width: 60em;
 	 		margin-bottom: 1em;
 	 		margin-left: 6em;
 	 	}
@@ -115,6 +173,12 @@
 	 		font-size: 1.5em;
 
 	 	}
+
+	 	        .banner-box{
+            display: table-cell;
+            vertical-align: middle;
+            color: tomato;
+        }
 	 </style>
 
 	 <footer></footer>
