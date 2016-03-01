@@ -47,18 +47,8 @@
             });
         });
 
-
-
-
         </script>
-
-
 </head>
-
-
-
-
-
 
 <body>
 
@@ -66,7 +56,8 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -84,7 +75,7 @@
                     <li class = "active" ><a href = contact.html>Contact</a><li>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Opportunities</a></li>
-                    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -92,9 +83,136 @@
         <!-- /.container -->
     </nav>
 
+		<!-- Images -->
+    		<!-- feet.jpeg -->
+    		<!-- sphere.jpeg -->
+    		<!-- tree.jpeg -->
+    		<!-- pc map.jpeg -->
+    		<!-- virtual-reality-lab.jpeg -->
+    		<!-- milkyway.jpeg -->
+    		<!-- pokemon.jpeg -->
 
+	<div class = "jumbotron" style = "background-color:#003366; background-image:url('img/feet.jpg');
+	height:2000px; width:auto; background-size:175%; background-position:center;">
+		<div style = "position: relative;	width:80%; height:auto; background-color:gray;
+									border-radius:15%; margin:auto; margin-top:3%;
+									opacity: 0.80;	filter: alpha(opacity=80);">
+			<div style = "position:relative; padding-top:5%;">
+				<h1 style = "position:relative; text-align:center; color:black;
+				font-family:'Shift',paladino linotype;">
+					Get Involved
+				</h1>
+				<p>
+					<ul
+					style = "width: 65%; font-size:21px;
+								 	position: relative;
+								 	margin:auto; padding-bottom: 7%; padding-top:2%;
+								 	font-family: 'Shift', ;
+									color:black;
+								 	">
+						<li>Study a new frontier in technology.</li>
+						<li>Gain exclusive access to demos and workshops with Oculus Rift and
+							other VR devices.</li>
+						<li>Learn about the applications of VR in the fields of medicine, military,
+							and gaming.</li>
+						<li>Augment your own research with help from VR.</li>
+						<li>Become part of a growing community with the ability to change the
+							way we view technology.</li>
+					</ul>
+				</p>
+			</div>
 
+					<div class = "button" style = "position:relative; margin:auto;
+					padding-bottom:10%;">
+						<a href = "" style = "position:relative;	text-align:center;
+																	color:white; font-size:30px;
+																	font-family:'Shift', palatino-linotype;
+																	border-radius:70%; width:25%; margin:auto;
+																	background:linear-gradient(blue,navy,#00001C);
+																	padding:2%; left:35%;
+																	float: left;">
 
+<!--background:linear-gradient(down, #d3d3d3, #2f4f4f,);-->
+
+<!-- position:relative;	text-align:center;
+											color:white; font-size:30px;
+											font-family:'Shift', palatino-linotype;
+											border-radius:70%; width:25%; margin:auto;
+											background-color:gray;
+											padding:2%;
+											float: left; -->
+
+<!-- border-right: 30px solid #6C6;border-top: 52px solid transparent;
+border-bottom: 52px solid transparent;
+
+float: left; width: 60px;	height: 104px;	background-color: #6C6;
+
+float: left; border-left: 30px solid #6C6;
+border-top: 52px solid transparent;
+border-bottom: 52px solid transparent; -->
+
+							Join Our Club
+						</a>
+				</div>
+	</div>
+
+	<div style="position:relative; height:auto; margin:auto; top:150px;">
+		<div style = "position:relative; width:80%; margin:auto;
+		height:auto; background-color:gray;	border-radius:15%; opacity: 0.80;
+		filter:alpha(opacity=80); padding-bottom:5%; padding-left:5%;">
+
+			<h1 style = "position:relative; padding-top:5%;	text-align:center;">
+				Location
+			</h1>
+			<div>
+				<h2>
+					GBM:
+				</h2>
+				<div id="mapGBM" style = "position:relative; margin:auto; width:70%;
+				height:auto; background-color:#d3d3d3;"></div>
+					<script>
+						function initMap() {
+							var mapDiv = document.getElementById('mapGBM');
+							var map = new google.maps.Map(mapDiv, {center: {lat: 44.540, lng: -78.546},
+      				zoom: 8});
+						}
+					</script>
+					<script src="https://www.google.com/maps/place/Price+Center,+La+Jolla,+CA+92037/data=!4m2!3m1!1s0x80dc06c46a524fb9:0x68571efb243bc289?sa=X&ved=0ahUKEwiSqK2OoZ7LAhVGwmMKHfRBB2oQ8gEIGzAA"
+					async defer></script>
+
+				<h2>
+					Workshops:
+				</h2>
+			</div>
+
+		</div>
+	</div>
+
+		<div style = "position:relative; top:250px; margin-top:5%; width:80%; margin:auto;
+		height:auto; background-color:gray;	border-radius:15%; opacity: 0.85;
+		filter:alpha(opacity=85);">
+			<h1 style = "position:relative; padding-top:20%; text-align:center;">
+				Contact Us
+			</h1>
+			<p style="position:relative; width:50%; left:25%;" align="center">
+				Ready to start your next project with us? Send us an email
+				and we will get back to you as soon as possible!
+			</p>
+			<div style="position:relative; margin:auto; left:40%;">
+				<div>
+					<a href="">
+						<img src="img/emailOutline.png"
+						style = "position:relative; margin:auto; padding-top:5%; width:15%;">
+					</a>
+				</div>
+				<a href="" style="position:relative; padding-bottom:5%; font-size:24px;
+				color:#00001C; right:10%;">
+					virtualreality@ucsd.edu
+				</a>
+			</div>
+		</div>
+
+	</div>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

@@ -52,7 +52,9 @@
 
         </script>
 
-
+    <!-- IMPORTS -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/homeycombs.css" />
 </head>
 
 
@@ -98,22 +100,140 @@
         <center><br><br><h1 style="color:white">About Us</h1></center>
     </div>
 
+
+
+
+
     <div>
-        <center><h1>About the club</h1></center>
-        <div class="focusblue">
-        a
-            
-        </div>
+        <div class="inner-wrapper">
+            <center><h1>Mission</h1></center>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, ante vel dignissim dignissim, orci massa dictum leo, et sagittis eros ipsum ac nibh. Vivamus metus lorem, egestas eu nulla id, semper molestie lacus. Nam volutpat tempor imperdiet. Mauris mollis eu urna vitae dictum. Mauris vulputate nibh ac iaculis tempor. Morbi vestibulum enim lacus, in malesuada sem tempus non. Mauris ac enim malesuada, condimentum dolor porttitor, blandit justo. Sed non arcu in dui pulvinar commodo. Maecenas accumsan iaculis tortor. Sed orci sem, euismod quis sollicitudin vitae, sagittis sit amet nisl. Aliquam vitae justo consectetur neque interdum vestibulum.</p>
+
+            <center><h1>Meet The Team</h1></center><br><br>
+
+
+            <div class="honeycombs">
+                <div class="comb"> <img src="img/Anish.jpg" /> 
+                    <span>
+                        <b>Anish Kannan</b><br>
+                        Project Manager<br>
+                        <i>Computer Science</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Christian.jpg" /> <span><b>This is</b><br>
+                    a test</span> </div>
+                <div class="comb"> <img src="img/Clif.jpg" /> <span><b>This is</b><br>
+                    a test</span> </div>
+                <div class="comb"> <img src="img/Connor.jpg" /> </div>
+                <div class="comb"> <img src="img/Kristin.jpg" /> </div>
+                <div class="comb"> <img src="img/Sam.jpg" /> 
+                    <span>
+                        <b>Sam Hessenauer</b><br>
+                        Executive President<br>
+                        <i>Electrical and Computer Engineering</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Pauline.jpg" /> </div>
+                <div class="comb"> <img src="img/Nick.jpg" /> </div>
+                <div class="comb"> <img src="img/Mark.jpg" /> </div>
+                <div class="comb"> <img src="img/Pablo.jpg" /> </div>
+
+            </div>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+            <script src="js/jquery.homeycombs.js"></script> 
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.honeycombs').honeycombs();
+                });
+            </script>
+
+
+            <center><h1>Get Involved</h1></center>
+            <div class="flex">
+                <div class="flex-column">
+                    <p><b>GBM Workshops Fridays 5-6pm SME 304</b></p>
+
+                    <div class="flex-column2">
+                        <img class="pic-getInvolved" src="img/get-involved.jpg">
+                    </div>
+
+                    <div class="flex-column2">
+                       <!-- <span><br>Learn about<br><b><i>new VR technology</i></b></span>
+                        <span>Start your<br><b><i>own research project</i></b></span>
+                        <span>Gain exclusive access to<br><b><i>demos and workshops</i></b></span>-->
+                    </div>
+
+
+                </div>
+
+                <div class="flex-column">
+                    <iframe id="Gmap"
+                      width="200"
+                      height="500"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAe95imuztMXk1uiwLf_24J_JWy2BqhmIY 
+                      &q=Structural+and+Materials+Engineering+(SME)+Building" allowfullscreen>
+                    </iframe>
+                </div>
+
+
+            </div>
     </div>
 
-        <center><h1>THE REAL PEOPLE BEHIND THE VIRTUAL WORLDS</h1></center>
 
+    <!-- STYLING -->
     <style type="text/css">
-    .banner{
-        background-color: #393E46;
-        height: 60vh;
 
-}
+        .flex-column > p{
+            font-size: 1.6em;
+        }
+        .pic-getInvolved{
+            width: 20em;
+            height: 20em;
+            display: inline-block;
+        }
+
+
+        .flex-column2{
+            display: inline;
+        }
+
+        iframe{
+            width: 40em !important;
+            height: 40em !important;
+        }
+
+        .flex{
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              
+              -webkit-flex-flow: row wrap;
+              justify-content: space-around;
+        }
+
+        .flex-column{
+            width: 40em;
+            display: inline;
+        }
+
+
+        #Gmap{
+        }
+
+        .inner-wrapper{
+            margin-right: 2em; 
+            margin-left: 2em;
+        }
+
+        .banner{
+            background-color: #393E46;
+            height: 60vh;
+
+        }
 
         h1{
             font-family: OstrichSans-Black;
@@ -140,6 +260,7 @@
     
     </style>
 
+    <!-- FOOTER -->
     <footer>
         <div>Virtual Reality Club at UCSD</div>
 
