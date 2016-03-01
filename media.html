@@ -1,116 +1,186 @@
-<!DOCTYPE html>
 <html>
+	<head>
+	</head>
+	<body>
 
-<head>
+		<div class="banner">
+		    <div class="banner-box">
 
-	 <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+			<center><h1>MEDIA</h1></center>
+			</div>
+		</div>
 
-    <title>Projectz beans</title>
+		<div class="media-column">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+			<a class"media-link" href="http://www.theverge.com/2016/2/28/11127706/htc-vive-tilt-brush-vr-painting-demo"><div class="media-post">
+				<p class="media-title"><b>Painter of light: my awkward adventures in virtual reality art</b></p>
+				<div class="media-op-info">
+					<img class="media-op-img" src="img/kramer.jpg">
+					<div class="media-meta">
+						<span>Connor Smith<br></span>
+						<span>9 hours ago<br><br></span>
+					</div>
+				</div>
+				<p class="media-desc">Now that the club has its very own HTC Vive, you can experience Tilt Brush as well!</p>
+				<b>Click to view</b>
+			</div></a>
 
+					<a class"media-link" href="http://us11.campaign-archive2.com/?u=5bd962f264c36c7c209b2d92f&id=4ba3d43bd4"><div class="media-post">
+				<p class="media-title"><b>VR Club at UCSD Newsletter Week 8</b></p>
+				<div class="media-op-info">
+					<img class="media-op-img" src="img/kramer.jpg">
+					<div class="media-meta">
+						<span>Sam Hessenauer<br></span>
+						<span>1 Week ago<br><br></span>
+					</div>
+				</div>
+				<p class="media-desc">VR Club at UCSD Newsletter Week 8</p>
+				<b>Click to view</b>
 
-<!-- IMPLEMENTATION OF FULLPAGE.JS -->
-
-    <link rel="stylesheet" type="text/css" href="css/fullPage.css">
-
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-    <script src="js/vendors/jquery.easings.min.js"></script>
-
-
-<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-    <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-    		$('#fullpage').fullpage({
-                verticalCentered: false
-    		});
-
-            $('#moveSectionDown').click(function(e){
-                e.preventDefault();
-                $.fn.fullpage.moveSectionDown();
-            });
-        });
+			</div></a>
 
 
+			<a class"media-link" href="http://uploadvr.com/meta-2-ar-glasses-ted/"><div class="media-post">
+				<p class="media-title"><b>Meta Unveils Incredible Augmented Reality Headset at TED</b></p>
+				<div class="media-op-info">
+					<img class="media-op-img" src="img/kramer.jpg">
+					<div class="media-meta">
+						<span>Anish Kannan<br></span>
+						<span>1 Week ago<br><br></span>
+					</div>
+				</div>
+				<p class="media-desc">Here's some on stage demos of Meta's new augmented reality tech.</p>
+				<b>Click to view</b>
+
+			</div></a>
+
+			<a class"media-link" href="http://venturebeat.com/2016/02/10/unity-technologies-and-valve-team-up-to-make-vr-development-easier/"><div class="media-post">
+				<p class="media-title"><b>Unity Technologies and Valve team up to make VR development easier</b></p>
+				<div class="media-op-info">
+					<img class="media-op-img" src="img/kramer.jpg">
+					<div class="media-meta">
+						<span>Sam Hessenauer<br></span>
+						<span>2 Weeks ago<br><br></span>
+					</div>
+				</div>
+				<p class="media-desc">Unity and Valve are teaming up to make virtual reality development possible within virtual reality.</p>
+				<b>Click to view</b>
+
+			</div>
+			</a>
+
+			<p class="media-post">No more posts to show...</p>
+		</div>
+
+		<div class="hide-mobile archive">
+			<p>Archive</p>
+		</div>
+
+	 <style type="text/css">
+	 .media-title{
+	 	color:#34495E;
+
+	 }
+
+	 	.media-link{
+	 	color: black;
+
+	 	}
+
+		 *{
+		 	margin: 0;
+		 	padding: 0;
+		 }
+
+		 a:link {
+		 		 	color: black;
+
+    text-decoration: none;
+
+}
+
+a:visited {
+		 	color: black;
+
+    text-decoration: none;
+
+}
+
+a > .media-post:hover {
+	background-color: #eee;
+}
 
 
-        </script>
+	 	body{
+	 		background: #fafafa;
+	 	}
 
-
-</head>
-
-
-
-
-
-
-<body>
-
-	<nav id = "menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand" href="#">VR Club @ UCSD</a>-->
-                <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                	<li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class = "active" ><a href = media.html>Media</a><li>
-                    <li><a href="#">Opportunities</a></li>
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- DAVID -->
-    <div class="post">
-        <h1></h1>
-    </div>
-
-    <style type="text/css">
-    </style>
+	 	.banner{
+            margin-top: -4em;
+            display: table;
+            width: 100%;
+            background-image: url('img/media-banner.gif');
+            background-size: cover;
+            height: 35em;
+      	     margin-bottom: 2em;
+	 	}
 
 
 
+	 	.media-column{
+	 		display: inline-block;
+	 	}
 
+	 	.hide-mobile{
+	 		display: inline-block;
+	 		background-color: #393E46;
+	 		height: 80vh;
+	 		width: 20em;
+	 		position: absolute;
+	 		margin-right: 6em;
+	 		right: 0px;
+	 		margin-bottom: 2em;
+	 		display: none;
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+	 	}
 
+	 	.archive{
+	 		color: white;
+	 		padding: 2em;
+	 	}
 
-</body>
+	 	.media-meta{
+	 		display: inline;
+	 	}
+	 	.media-post{
+	 		padding: 1em;
+	 		background: white;
+	 		border-radius: 0.3em;
+	 		width: 60em;
+	 		margin-bottom: 1em;
+	 		margin-left: 6em;
+	 	}
 
+	 	.media-op-img{
+	 		float: left;
+	 		margin-right: 1.2em;
+	 		border-radius: 50%;
+	 		height: 3em;
+	 		width: 3em;
+	 	}
 
+	 	.media-title{
+	 		font-size: 1.5em;
 
+	 	}
 
- </html>
+	 	        .banner-box{
+            display: table-cell;
+            vertical-align: middle;
+            color: tomato;
+        }
+	 </style>
+
+	 <footer></footer>
+	</body>
+</html>
