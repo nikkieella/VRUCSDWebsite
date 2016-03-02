@@ -3,7 +3,7 @@
 
 <head>
 
-	 <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -69,34 +69,33 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand" href="#">VR Club @ UCSD</a>-->
-                <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li class = "active" ><a href = opportunities.html>Opportunities</a><li>
-  
-                </ul>
-            </div>
-             <!--.navbar-collapse -->
-        </div> 
-    </div>
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <!--<a class="navbar-brand" href="#">VR Club @ UCSD</a>-->
+	                <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav" style="font-family:open sans;">
+	                    <li><a href="index.html">Home</a></li>
+	                    <li class = "active" ><a href="about.html">About</a></li>
+	                    <li><a href="contact.html">Contact</a></li>
+	                    <li><a href="media.html">Media</a></li>
+	                    <li><a href = "opportunities.html">Opportunities</a><li>
+
+	                </ul>
+	            </div>
+	             <!--.navbar-collapse -->
+	        </div>
+	    </div>
 
 <!--
     <div class="banner">
@@ -108,16 +107,16 @@
         <div class="flex-row ">
             <span class="flex-item ">
                 <a class="page-scroll" href="#Mission">Mission</a>
-            </span> 
+            </span>
 
             <span class="flex-item">
                 <a class="page-scroll" href="#honeycombs">Meet the Team</a>
-                
-            </span> 
 
-          
+            </span>
+
+
         </div>
-        
+
     </nav>
         <script src="js/jq-sticky-anything.min.js"></script>
 
@@ -126,7 +125,7 @@
     $('.secondnavbar').stickThis({
         top:        0,      // top position of sticky element, measured from 'ceiling'
         minscreenwidth: 0,      // element will not be sticky when viewport width smaller than this
-         maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 
+         maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this
         zindex:     1,      // z-index value of sticky element
         debugmode:  false   // when true, errors will be logged to console
     });
@@ -143,13 +142,17 @@
             <center><h1>Mission</h1></center><br>
             <div class="flex">
                 <div class="flex-column">
+                    <div class="mission-photo">
+                        <img src="img/Mission Photo.jpg" style="width:72%; height:auto;">
+
+                    </div>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column" style="position:relative; top:-36.5em;">
                      <div class="mission-statement">
-                        <span><i><b>We aim to create a multidisciplinary student community with a shared interest in Virtual Reality or Augmented Reality.</b></i></span><br><br><br>
+                        <span><i><b>We aim to create a multidisciplinary student community with a shared interest in virtual reality or augmented reality.</b></i></span><br><br><br>
                     </div>
 
-                    <div class="mission-paragraph" 
+                    <div class="mission-paragraph"
                         style="position:relative; margin-right:3.5em; text-align:justify">
                         <span>At UCSD's Virtual Reality Club, our goal is to provide workshops to give members the skills that the virtual reality industry looks for to further pursue a career in the field. As well as work on a vast array of projects between different disciplines and work with clubs across campus. Since our founding in September 2015, we have reached over 200 students across a range of majors and had companies such as Qualcomm, OSSIC VR, and NanoVR come speak to our students. We look forward to growing the community and supporting the students who are passionate for the future of virtual and augmented reality.</span><br><br><br>
 
@@ -157,12 +160,11 @@
 
             </div>
         </div>
-           
-            <center><h1 id="honeycombs">Meet The Team</h1></center><br><br>
 
-
+        <div style="position:relative; top:-68em;"><h1 id="honeycombs">
+            <center>Meet The Team</h1></center><br>
             <div class="honeycombs" >
-                <div class="comb"> <img src="img/Anish.jpg" /> 
+                <div class="comb"> <img src="img/Anish.jpg" />
                     <span>
                         <b>Anish Kannan</b><br>
                         Project Manager<br>
@@ -190,14 +192,14 @@
                         <i>Computational Physics<br>& ICAM Major</i>
                     </span>
                 </div>
-                <div class="comb"> <img src="img/Connor.jpg" /> 
+                <div class="comb"> <img src="img/Connor.jpg" />
                     <span>
                         <b>Connor Smith</b><br>
                         Project Manager<br>
                         <i>Computer Science Major</i>
                     </span>
                 </div>
-                <div class="comb"> <img src="img/Sam.jpg" /> 
+                <div class="comb"> <img src="img/Sam.jpg" />
                     <span>
                         <b>Sam Hessenauer</b><br>
                         Executive President<br>
@@ -234,17 +236,19 @@
                 </div>
 
             </div>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-            <script src="js/jquery.homeycombs.js"></script> 
+        </div>
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="js/jquery.homeycombs.js"></script>
             <script type="text/javascript">
                 $(document).ready(function() {
                     $('.honeycombs').honeycombs();
                 });
             </script>
 
-
+<!--commenting out get involved page
             <center><h1>Get Involved</h1></center>
-            <div class="flex" id = "GetInvolved">
+            <div class="flex" id = "Get Involved">
                 <div class="flex-column">
                     <p><b>GBM Workshops Fridays 5-6pm SME 304</b></p>
 
@@ -253,9 +257,9 @@
                     </div>
 
                     <div class="flex-column2">
-                       <!-- <span><br>Learn about<br><b><i>new VR technology</i></b></span>
+                       <span><br>Learn about<br><b><i>new VR technology</i></b></span>
                         <span>Start your<br><b><i>own research project</i></b></span>
-                        <span>Gain exclusive access to<br><b><i>demos and workshops</i></b></span>-->
+                        <span>Gain exclusive access to<br><b><i>demos and workshops</i></b></span>
                     </div>
 
 
@@ -266,7 +270,7 @@
                       width="200"
                       height="500"
                       frameborder="0" style="border:0"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAe95imuztMXk1uiwLf_24J_JWy2BqhmIY 
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAe95imuztMXk1uiwLf_24J_JWy2BqhmIY
                       &q=Structural+and+Materials+Engineering+(SME)+Building" allowfullscreen>
                     </iframe>
                 </div>
@@ -274,7 +278,7 @@
 
             </div>
     </div>
-
+-->
 
     <!-- STYLING -->
     <style type="text/css">
@@ -284,21 +288,30 @@
         }
 
         .mission-div{
+            background-color: #ffffff;
 
         }
 
-        .mission-statement > span{ 
+        .mission-photo{
+            width: 50em;
+            height: 100em;
+            display: inline-block;
+        }
+
+        .mission-statement > span{
             width: 40em;
             line-height: 1.5em;
             margin-right: 2em;
             font-size: 2em;
+            font color: #191919;
 
         }
 
         .mission-paragraph> span{
             width: 40em;
             line-height: 2em;
-            margin-right: 2em;           
+            margin-right: 2em;
+            font color: #404040;
             text-align:justify;
 
         }
@@ -327,6 +340,7 @@
         iframe{
             width: 40em !important;
             height: 40em !important;
+
         }
 
         .flex{
@@ -335,7 +349,7 @@
               display: -ms-flexbox;
               display: -webkit-flex;
               display: flex;
-              
+
               -webkit-flex-flow: row wrap;
               justify-content: space-around;
         }
@@ -350,7 +364,7 @@
         }
 
         .inner-wrapper{
-            margin-right: 2em; 
+            margin-right: 2em;
             margin-left: 2em;
         }
 
@@ -400,7 +414,7 @@
             display: -webkit-box !important;
             display: -moz-box !important;
             display: -ms-flexbox !important;
-            
+
             display: -webkit-flex !important;
             display: flex !important;
             align-items: center !important;
@@ -435,7 +449,7 @@
 
         .navbar-nav{
             display: table-cell;
-            text-align: center;       
+            text-align: center;
         }
 
         .navbar{
@@ -450,10 +464,11 @@
             color: white;
         }
 
-    
+
     </style>
 
-    <!-- FOOTER -->
+
+<!-- FOOTER commenting out footer
     <footer>
         <div>Virtual Reality Club at UCSD</div>
 
@@ -467,7 +482,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <script src="js/scrolling-nav.js"></script>
-
+-->
 
 
     <!-- Bootstrap Core JavaScript -->
