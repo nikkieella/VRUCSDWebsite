@@ -17,6 +17,9 @@
 
 <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="css/fullPage.css">
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -34,7 +37,8 @@
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-    <script type="text/javascript">
+
+    <!--<script type="text/javascript">
 
         $(document).ready(function() {
     		$('#fullpage').fullpage({
@@ -62,9 +66,9 @@
 
 
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-	<nav id = "menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -78,33 +82,65 @@
                 <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                	<li><a href="#">Home</a></li>
-
-                   	<li class = "active" ><a href = about.html>About</a><li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Media</a></li>
-                    <li><a href="#">Opportunities</a></li>
-                    
+                    <li class = "active" ><a href = opportunities.html>Opportunities</a><li>
+  
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+             <!--.navbar-collapse -->
+        </div> 
+    </div>
 
-    <!-- DAVID -->
+<!--
     <div class="banner">
         <center><br><br><h1 style="color:white">About Us</h1></center>
     </div>
+-->
+
+    <nav class="secondnavbar flex ">
+        <div class="flex-row ">
+            <span class="flex-item ">
+                <a class="page-scroll" href="#Mission">Mission</a>
+            </span> 
+
+            <span class="flex-item">
+                <a class="page-scroll" href="#honeycombs">Meet the Team</a>
+                
+            </span> 
+
+            <span class="flex-item">
+                <a class="page-scroll" href="#jobs">Plan</a>
+            </span>   
+        </div>
+        
+    </nav>
+        <script src="js/jq-sticky-anything.min.js"></script>
+
+    <script type="text/javascript">
+
+    $('.secondnavbar').stickThis({
+        top:        0,      // top position of sticky element, measured from 'ceiling'
+        minscreenwidth: 0,      // element will not be sticky when viewport width smaller than this
+         maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 
+        zindex:     1,      // z-index value of sticky element
+        debugmode:  false   // when true, errors will be logged to console
+    });
+
+    </script>
 
 
 
 
 
     <div class="mission-div">
+    <div id="Mission">
         <div class="inner-wrapper">
             <center><h1>Mission</h1></center><br><br>
             <div class="flex">
@@ -122,10 +158,10 @@
             </div>
         </div>
            
-            <center><h1>Meet The Team</h1></center><br><br>
+            <center><h1 id="honeycombs">Meet The Team</h1></center><br><br>
 
 
-            <div class="honeycombs">
+            <div class="honeycombs" >
                 <div class="comb"> <img src="img/Anish.jpg" /> 
                     <span>
                         <b>Anish Kannan</b><br>
@@ -208,7 +244,7 @@
 
 
             <center><h1>Get Involved</h1></center>
-            <div class="flex">
+            <div class="flex" id = "GetInvolved">
                 <div class="flex-column">
                     <p><b>GBM Workshops Fridays 5-6pm SME 304</b></p>
 
@@ -343,6 +379,75 @@
             background-color: blue;
         }
 
+        .flex-row{
+            width: 100%;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background-color: #333 !important;
+
+        }
+
+        .cloned{
+            margin-top: 0 !important;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            
+            display: -webkit-flex !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 2em !important;
+            background-color: #333 !important;
+
+        }
+
+
+        .flex{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+
+
+        }
+
+        .flex-item{
+            margin-top: 1em;
+            padding: 1em;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            background-color: #333;
+
+        }
+
+        .navbar-nav{
+            display: table-cell;
+            text-align: center;       
+        }
+
+        .navbar{
+            margin-top: 0 !important;
+            margin-bottom: 0;
+        }
+
+        .secondnavbar{
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            color: white;
+        }
+
     
     </style>
 
@@ -357,7 +462,9 @@
         </div>
 
     </footer>
+    <script src="js/jquery.easing.min.js"></script>
 
+    <script src="js/scrolling-nav.js"></script>
 
 
 
