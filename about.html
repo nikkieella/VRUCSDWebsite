@@ -104,12 +104,24 @@
 
 
 
-    <div>
+    <div class="mission-div">
         <div class="inner-wrapper">
-            <center><h1>Mission</h1></center>
+            <center><h1>Mission</h1></center><br><br>
+            <div class="flex">
+                <div class="flex-column">
+                </div>
+                <div class="flex-column">
+                     <div class="mission-statement">
+                        <span><i><b>The Virtual Reality Club at UCSD aims to create a multidisciplinary student community with a shared interest in Virtual Reality or Augmented Reality.</b></i></span><br><br><br>
+                    </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, ante vel dignissim dignissim, orci massa dictum leo, et sagittis eros ipsum ac nibh. Vivamus metus lorem, egestas eu nulla id, semper molestie lacus. Nam volutpat tempor imperdiet. Mauris mollis eu urna vitae dictum. Mauris vulputate nibh ac iaculis tempor. Morbi vestibulum enim lacus, in malesuada sem tempus non. Mauris ac enim malesuada, condimentum dolor porttitor, blandit justo. Sed non arcu in dui pulvinar commodo. Maecenas accumsan iaculis tortor. Sed orci sem, euismod quis sollicitudin vitae, sagittis sit amet nisl. Aliquam vitae justo consectetur neque interdum vestibulum.</p>
+                    <div class="mission-paragraph">
+                        <p>Our goal is to provide workshops to give members the skills that the virtual reality industry looks for to further pursue a career in the field. As well as work on a vast array of projects between different disciplines and work with clubs across campus.<br><br>Since our founding in September 2015, we have reached over 200 students across a range of majors and had companies such as Qualcomm, OSSIC VR, and NanoVR come speak to our students.<br><br>We look forward to growing the community and supporting the students who are passionate for the future of virtual and augmented reality.</p><br><br><br>
+                    </div>
 
+            </div>
+        </div>
+           
             <center><h1>Meet The Team</h1></center><br><br>
 
 
@@ -118,26 +130,72 @@
                     <span>
                         <b>Anish Kannan</b><br>
                         Project Manager<br>
-                        <i>Computer Science</i>
+                        <i>Computer Science Major</i>
                     </span>
                 </div>
-                <div class="comb"> <img src="img/Christian.jpg" /> <span><b>This is</b><br>
-                    a test</span> </div>
-                <div class="comb"> <img src="img/Clif.jpg" /> <span><b>This is</b><br>
-                    a test</span> </div>
-                <div class="comb"> <img src="img/Connor.jpg" /> </div>
-                <div class="comb"> <img src="img/Kristin.jpg" /> </div>
+                <div class="comb"> <img src="img/Pauline.jpg" />
+                    <span>
+                        <b>Pauline Nguyen</b><br>
+                        Science Project Manager<br>
+                        <i>Executive Senior<br>Industry Outreach</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Christian.jpg" />
+                    <span>
+                        <b>Christian Calvo</b><br>
+                        Vice President<br>
+                        <i>Nanoengineering Major</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Clif.jpg" />
+                    <span>
+                        <b>Clif Pottberg</b><br>
+                        Main Project Officer<br>
+                        <i>Computational Physics<br>& ICAM Major</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Connor.jpg" /> 
+                    <span>
+                        <b>Connor Smith</b><br>
+                        Project Manager<br>
+                        <i>Computer Science Major</i>
+                    </span>
+                </div>
                 <div class="comb"> <img src="img/Sam.jpg" /> 
                     <span>
                         <b>Sam Hessenauer</b><br>
                         Executive President<br>
-                        <i>Electrical and Computer Engineering</i>
+                        <i>Electrical & Computer<br>Engineering</i>
                     </span>
                 </div>
-                <div class="comb"> <img src="img/Pauline.jpg" /> </div>
-                <div class="comb"> <img src="img/Nick.jpg" /> </div>
-                <div class="comb"> <img src="img/Mark.jpg" /> </div>
-                <div class="comb"> <img src="img/Pablo.jpg" /> </div>
+                <div class="comb"> <img src="img/Kristin.jpg" />
+                    <span>
+                        <b>Kristin Agcaoili</b><br>
+                        Secretary<br>
+                        <i>Computer Science Major</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Pablo.jpg" />
+                    <span>
+                        <b>Pablo Volpe</b><br>
+                        Executive Event Logistics<br>
+                        <i>Computer Science Major</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Mark.jpg" />
+                    <span>
+                        <b>Mark Javier</b><br>
+                        Executive Finance Officer<br>
+                        <i>Economics Major</i>
+                    </span>
+                </div>
+                <div class="comb"> <img src="img/Nick.jpg" />
+                    <span>
+                        <b>Nick Crow</b><br>
+                        Historian Officer<br>
+                        <i>Computer Science Major</i>
+                    </span>
+                </div>
 
             </div>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
@@ -185,9 +243,37 @@
     <!-- STYLING -->
     <style type="text/css">
 
+        *{
+            font-family: open-sans !important;
+        }
+
+        .mission-div{
+        }
+
+        .mission-statement > span{ 
+            width: 40em;
+            text-align: right;
+            line-height: 2em;
+            margin-right: 2em;
+
+        }
+
+        .mission-paragraph > p{
+            width: 40em;
+            text-align: left;
+            line-height: 2em;
+        }
+
+        .honeycombs .inner_span{
+            background-color: rgba(93,93,93,0.6) !important;
+            color: #ffffff !important;
+            text-shadow: 1px 1px black ;
+        }
+
         .flex-column > p{
             font-size: 1.6em;
         }
+
         .pic-getInvolved{
             width: 20em;
             height: 20em;
