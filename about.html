@@ -17,6 +17,9 @@
 
 <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="css/fullPage.css">
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -34,7 +37,8 @@
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-    <script type="text/javascript">
+
+    <!--<script type="text/javascript">
 
         $(document).ready(function() {
     		$('#fullpage').fullpage({
@@ -62,7 +66,7 @@
 
 
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
@@ -103,11 +107,11 @@
     <nav class="secondnavbar flex ">
         <div class="flex-row ">
             <span class="flex-item ">
-                <a class="page-scroll" href="#jobs">Current</a>
+                <a class="page-scroll" href="#Mission">Mission</a>
             </span> 
 
             <span class="flex-item">
-                <a class="page-scroll" href="#jobs">Jobs</a>
+                <a class="page-scroll" href="#honeycombs">Meet the Team</a>
                 
             </span> 
 
@@ -135,16 +139,16 @@
 
 
 
-    <div>
+    <div id="Mission">
         <div class="inner-wrapper">
             <center><h1>Mission</h1></center>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, ante vel dignissim dignissim, orci massa dictum leo, et sagittis eros ipsum ac nibh. Vivamus metus lorem, egestas eu nulla id, semper molestie lacus. Nam volutpat tempor imperdiet. Mauris mollis eu urna vitae dictum. Mauris vulputate nibh ac iaculis tempor. Morbi vestibulum enim lacus, in malesuada sem tempus non. Mauris ac enim malesuada, condimentum dolor porttitor, blandit justo. Sed non arcu in dui pulvinar commodo. Maecenas accumsan iaculis tortor. Sed orci sem, euismod quis sollicitudin vitae, sagittis sit amet nisl. Aliquam vitae justo consectetur neque interdum vestibulum.</p>
 
-            <center><h1>Meet The Team</h1></center><br><br>
+            <center><h1 id="honeycombs">Meet The Team</h1></center><br><br>
 
 
-            <div class="honeycombs">
+            <div class="honeycombs" >
                 <div class="comb"> <img src="img/Anish.jpg" /> 
                     <span>
                         <b>Anish Kannan</b><br>
@@ -181,7 +185,7 @@
 
 
             <center><h1>Get Involved</h1></center>
-            <div class="flex">
+            <div class="flex" id = "GetInvolved">
                 <div class="flex-column">
                     <p><b>GBM Workshops Fridays 5-6pm SME 304</b></p>
 
@@ -371,7 +375,9 @@
         </div>
 
     </footer>
+    <script src="js/jquery.easing.min.js"></script>
 
+    <script src="js/scrolling-nav.js"></script>
 
 
 
