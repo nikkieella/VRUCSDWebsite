@@ -17,9 +17,10 @@
 
 <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
+  
     <link rel="stylesheet" type="text/css" href="css/fullPage.css">
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -32,7 +33,7 @@
 <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
 
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.fullPage.js"></script>-->
 
     <script type="text/javascript">
 
@@ -62,7 +63,7 @@
 
 <body>
 
-	<nav id = "menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -76,21 +77,54 @@
                 <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class = "active" ><a href = index.html>Home</a><li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Media</a></li>
-                    <li><a href="#">Opportunities</a></li>
-                    
+                    <li class = "active" ><a href = opportunities.html>Opportunities</a><li>
+  
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+             <!--.navbar-collapse -->
+        </div> 
+    </div>
+
+    <nav class="secondnavbar flex ">
+        <div class="flex-row ">
+            <span class="flex-item ">
+                <a class="page-scroll" href="#jobs">Current</a>
+            </span> 
+
+            <span class="flex-item">
+                <a class="page-scroll" href="#jobs">Jobs</a>
+                
+            </span> 
+
+            <span class="flex-item">
+                <a class="page-scroll" href="#jobs">Plan</a>
+            </span>   
         </div>
-        <!-- /.container -->
+        
     </nav>
+        <script src="js/jq-sticky-anything.min.js"></script>
+
+    <script type="text/javascript">
+
+    $('.secondnavbar').stickThis({
+        top:        0,      // top position of sticky element, measured from 'ceiling'
+        minscreenwidth: 0,      // element will not be sticky when viewport width smaller than this
+         maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 
+        zindex:     1,      // z-index value of sticky element
+        debugmode:  false   // when true, errors will be logged to console
+    });
+
+    </script>
+
+
 
 
 
@@ -163,12 +197,138 @@
 
 
 
-
-
-
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .flex-row{
+            width: 100%;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background-color: #333 !important;
+
+        }
+
+        .cloned{
+            margin-top: 0 !important;
+            display: -webkit-box !important;
+            display: -moz-box !important;
+            display: -ms-flexbox !important;
+            display: -webkit-flex !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 2em !important;
+            background-color: #333 !important;
+
+        }
+
+
+        .flex{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+
+
+        }
+
+        .flex-item{
+            margin-top: 1em;
+            padding: 1em;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            background-color: #333;
+
+        }
+
+        .navbar-nav{
+            display: table-cell;
+            text-align: center;       
+        }
+
+        .navbar{
+            margin-top: 0 !important;
+            margin-bottom: 0;
+        }
+
+        .secondnavbar{
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        body{
+            background: #fafafa;
+
+        }
+
+        .jobs{
+            padding: 2em;
+        }
+
+            .banner{
+            margin-top: -4em;
+            display: table;
+            width: 100%;
+            background-image: url('img/VR_jobs.jpg');
+            background-size: cover;
+            height: 35em;
+            margin-bottom: 2em;
+        }
+
+
+        .publicisize{
+            padding: 2em;
+            background-color: #22313F;
+            color: white;
+            border-radius: 0.3em;
+            margin-bottom: 2em;
+        }
+
+        .job-posting{
+            text-align: left;
+            padding: 2em;
+            background-color: white;
+            margin-bottom: 2em;
+        }
+
+        .job-posting > img{
+            max-height: 3em;
+        }
+
+        .item > img{
+            max-height: 30em;
+        }
+
+        .banner-box{
+            display: table-cell;
+            vertical-align: middle;
+            color: tomato;
+        }
+
+        .page-desc{
+            padding: 2em;
+        }
+
+        .title
+        {
+            color: white;
+
+        }
+    </style>
+
 
 
 </body>
