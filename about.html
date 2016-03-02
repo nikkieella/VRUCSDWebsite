@@ -3,7 +3,7 @@
 
 <head>
 
-	 <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -143,10 +143,14 @@
             <center><h1>Mission</h1></center><br>
             <div class="flex">
                 <div class="flex-column">
+                    <div class="mission-photo">
+                        <img src="img/Mission Photo.jpg" style="width:72%; height:auto;">
+
+                    </div>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column" style="position:relative; top:-36.5em;">
                      <div class="mission-statement">
-                        <span><i><b>We aim to create a multidisciplinary student community with a shared interest in Virtual Reality or Augmented Reality.</b></i></span><br><br><br>
+                        <span><i><b>We aim to create a multidisciplinary student community with a shared interest in virtual reality or augmented reality.</b></i></span><br><br><br>
                     </div>
 
                     <div class="mission-paragraph" 
@@ -158,9 +162,8 @@
             </div>
         </div>
            
-            <center><h1 id="honeycombs">Meet The Team</h1></center><br><br>
-
-
+        <div style="position:relative; top:-68em;"><h1 id="honeycombs">
+            <center>Meet The Team</h1></center><br>
             <div class="honeycombs" >
                 <div class="comb"> <img src="img/Anish.jpg" /> 
                     <span>
@@ -234,6 +237,8 @@
                 </div>
 
             </div>
+        </div>
+
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
             <script src="js/jquery.homeycombs.js"></script> 
             <script type="text/javascript">
@@ -242,9 +247,9 @@
                 });
             </script>
 
-
+<!--commenting out get involved page
             <center><h1>Get Involved</h1></center>
-            <div class="flex" id = "GetInvolved">
+            <div class="flex" id = "Get Involved">
                 <div class="flex-column">
                     <p><b>GBM Workshops Fridays 5-6pm SME 304</b></p>
 
@@ -253,9 +258,9 @@
                     </div>
 
                     <div class="flex-column2">
-                       <!-- <span><br>Learn about<br><b><i>new VR technology</i></b></span>
+                       <span><br>Learn about<br><b><i>new VR technology</i></b></span>
                         <span>Start your<br><b><i>own research project</i></b></span>
-                        <span>Gain exclusive access to<br><b><i>demos and workshops</i></b></span>-->
+                        <span>Gain exclusive access to<br><b><i>demos and workshops</i></b></span>
                     </div>
 
 
@@ -274,7 +279,7 @@
 
             </div>
     </div>
-
+-->
 
     <!-- STYLING -->
     <style type="text/css">
@@ -284,7 +289,14 @@
         }
 
         .mission-div{
+            background-color: #ffffff;
 
+        }
+
+        .mission-photo{
+            width: 50em;
+            height: 100em;
+            display: inline-block;
         }
 
         .mission-statement > span{ 
@@ -292,13 +304,15 @@
             line-height: 1.5em;
             margin-right: 2em;
             font-size: 2em;
+            font color: #191919;
 
         }
 
         .mission-paragraph> span{
             width: 40em;
             line-height: 2em;
-            margin-right: 2em;           
+            margin-right: 2em;
+            font color: #404040;
             text-align:justify;
 
         }
@@ -327,6 +341,7 @@
         iframe{
             width: 40em !important;
             height: 40em !important;
+
         }
 
         .flex{
@@ -453,7 +468,8 @@
     
     </style>
 
-    <!-- FOOTER -->
+
+<!-- FOOTER commenting out footer
     <footer>
         <div>Virtual Reality Club at UCSD</div>
 
@@ -467,7 +483,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <script src="js/scrolling-nav.js"></script>
-
+-->
 
 
     <!-- Bootstrap Core JavaScript -->
