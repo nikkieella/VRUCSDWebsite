@@ -17,6 +17,9 @@
 
 <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
 
@@ -49,7 +52,7 @@
                 e.preventDefault();
                 $.fn.fullpage.moveSectionDown();
             });
-        });
+        }); -->
 
 
 
@@ -66,7 +69,7 @@
 
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style = "background-color: black;">
 
 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
 	        <div class="container-fluid">
@@ -79,12 +82,12 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	                <!--<a class="navbar-brand" href="#">VR Club @ UCSD</a>-->
-	                <a href="#" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
+	                <a href="index.html" class="pull-left"><img src="img/VR_ClubLogo.png" height = "50" width = "75"></a>
 	            </div>
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                <ul class="nav navbar-nav" style="font-family:open sans;">
+	                <ul class="nav navbar-nav" style="font-family:;">
 	                    <li><a href="index.html">Home</a></li>
 	                    <li class = "active" ><a href="about.html">About</a></li>
 	                    <li><a href="contact.html">Contact</a></li>
@@ -106,11 +109,22 @@
     <nav class="secondnavbar flex ">
         <div class="flex-row ">
             <span class="flex-item ">
-                <a class="page-scroll" href="#Mission">Mission</a>
+
+
+                <i class="fa fa-key fa-2x" style="vertical-align: middle;">
+                     <a class="page-scroll" href="#Mission" style = "font-size: 90%; color:white; ">Mission</a>
+
+                </i>
+
+               
             </span>
 
             <span class="flex-item">
-                <a class="page-scroll" href="#honeycombs">Meet the Team</a>
+                <i class="fa fa-users fa-2x">
+                <a class="page-scroll" href="#honeycombs"style = "font-size: 90%;color:white;"> Meet the Team
+                    </i>
+
+                </a>
 
             </span>
 
@@ -136,7 +150,7 @@
 
 
 
-    <div class="mission-div">
+    <div class="mission-div" style = "background-color: black; ">
     <div id="Mission">
         <div class="inner-wrapper">
             <center><h1>Mission</h1></center><br>
@@ -151,11 +165,11 @@
                 <div class="flex-column" style="position:relative; top:-36.5em;"> -->
                 <div class="flex-column">
 
-                     <div class="mission-statement">
+                     <div class="mission-statement" style = "color: white;">
                         <span><i><b>We aim to create a multidisciplinary student community with a shared interest in virtual reality or augmented reality.</b></i></span><br><br><br>
                     </div>
 
-                    <div class="mission-paragraph" >
+                    <div class="mission-paragraph" style = "color:white; text-align: center;" >
                         <!--style="position:relative; margin-right:3.5em; text-align:justify">-->
                         <span>At UCSD's Virtual Reality Club, our goal is to provide workshops to give members the skills that the virtual reality industry looks for to further pursue a career in the field. As well as work on a vast array of projects between different disciplines and work with clubs across campus. Since our founding in September 2015, we have reached over 200 students across a range of majors and had companies such as Qualcomm, OSSIC VR, and NanoVR come speak to our students. We look forward to growing the community and supporting the students who are passionate for the future of virtual and augmented reality.</span><br><br><br>
 
@@ -289,7 +303,7 @@
     <style type="text/css">
 
         *{
-            font-family: open-sans !important;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .mission-div{
@@ -380,8 +394,12 @@
         }
 
         h1{
-            font-family: OstrichSans-Black;
-            color: tomato;
+           /* font-family: OstrichSans-Black;*/
+
+            font-family: 'Open Sans', sans-serif !important;
+            text-decoration: underline;
+    
+            color: #007BD2;
         }
 
 
@@ -483,11 +501,11 @@
             <i class="fa fa-envelope fa-4x"></i>
         </div>
 
-    </footer>
+    </footer> -->
     <script src="js/jquery.easing.min.js"></script>
 
     <script src="js/scrolling-nav.js"></script>
--->
+
 
 
     <!-- Bootstrap Core JavaScript -->
