@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Opportunities</title>
+    <title style = "font-family:helvetica;">
+      Opportunities
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +35,7 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style = "background-color:black;">
 
 
 
@@ -115,13 +117,15 @@
 
             </span>
 
-                   </div>
+          </div>
 
     </nav>
 
     <div class="banner">
         <div class="banner-box">
-            <center><h1 style = "color:white;">Opportunities</h1></center>
+            <center><h1 style = "color:white;font-family:helvetica;">
+              Opportunities
+            </h1></center>
         </div>
     </div>
 
@@ -139,13 +143,18 @@
     </section>-->
 
     <div class="page-desc">
-        <h1>Making it easier to get involved</h1>
-        <p>Finding VR projects to get involved with should not be hard. Here's a curated list of projects looking for developers like you to help advance the field. Check them out! </p>
+        <h1 style = "color:#d3d3d3;">Making it easier to get involved</h1>
+        <p style = "color:#d3d3d3;">Finding VR projects to get involved with should not be hard. Here's a curated list of projects looking for developers like you to help advance the field. Check them out! </p>
     </div>
 
+    <div style="position:relative; background:linear-gradient(black,#02010F,black);
+  	height:120px;	top:0%; z-index:100;" id = "contact"></div>
+
     <!-- Internships Section -->
-    <section id="internships" class="internships-section">
-    <h1>Featured Opportunites</h1>
+    <section id="internships" class="internships-section" style="background-color:black; position:relative; margin-top:-150px;">
+    <h1 style = "color:#d3d3d3;">
+      Featured Opportunites
+    </h1>
 
          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -156,10 +165,12 @@
   </ol>
 
   <!-- Wrapper for slides -->
+  <div style = "height:50em;">
   <div class="carousel-inner">
     <div class="item active">
       <img src="img/VRinternship.jpg" alt="..." width="100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption" style = "opacity: 0.88; filter: alpha(opacity=86);
+      background-color:gray;">
           <h3>Animate Objects</h3>
           <p> Animate Objects/AO is a new San Diego startup that creates Augmented Reality experiences for theme parks, attractions, events and products. The company is founded by one of San Diego's most well known startup entrepreneurs who is the organizer for the San Diego Augmented Reality User Group and also created the largest Kickstarter campaign in SD history with $928k for "The Pocket Drone." At one point in his career he also worked for the Academic Computing Dept at UCSD.
 Animate Objects/AO is currently working with major parks and museums to bring our location based augmented reality ecosystem to launch as early as this summer. They are in need of Unity content creators, animators, scripters and 3D modelers who will help make unique experiences for our platform and customers.
@@ -168,7 +179,8 @@ Please send resume and links to any available work, screenshots and whatever els
     </div>
     <div class="item">
       <img src="img/NASAinternship.jpg" alt="..." width="100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption" style = "opacity: 0.88; filter: alpha(opacity=86);
+      background-color:gray;">
           <h3>NASA</h3>
           <p>The Jet Propulsion Laboratory is taking applications for interns interested in working with Virtual/Augmented Reality. They are working to provide AR training simulations for astronauts in space as well as visualizations for real time missions on Mars. Technologies they work with include mobile imaging and Microsoft’s HoloLens. You can find more information about JPL’s OpsLab here: http://opslab.jpl.nasa.gov/.
 If you are interested, send your resume/portfolio to OpsLab member Victor Luo at Victor.Luo@jpl.nasa.gov and mention you are a part of Virtual Reality Club at UC San Diego.</p>
@@ -176,7 +188,8 @@ If you are interested, send your resume/portfolio to OpsLab member Victor Luo at
     </div>
     <div class="item">
       <img src="img/UCSDinternship.jpg" alt="..." width="100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption" style = "opacity: 0.88; filter: alpha(opacity=86);
+      background-color:gray;">
           <h3>Engineers for Exploration</h3>
           <p>Engineers for Exploration is currently seeking undergraduate interns to assist in creating technologies for archaeologists, environmentalists, explorers etc. There are several ongoing projects including GUI design and experimentation with 3d reconstruction algorithms and devices (using Google Tango tablets). If this sounds interesting you should apply.
 
@@ -195,6 +208,7 @@ Engineers for Exploration also has a 10-week summer paid internship available wh
   </a>
 </div> <!-- Carousel -->
 
+    </div>
     </div>
     </div>
 
@@ -222,8 +236,13 @@ Engineers for Exploration also has a 10-week summer paid internship available wh
         </div>
     </section>-->
 
+    <div style="position:relative; background:linear-gradient(black,#02010F,black);
+  	height:120px;	top:0%; z-index:100;" id = "contact"></div>
+
     <div class="jobs" id="jobs">
-        <h1>All current opportunities</h1>
+        <h1 style = "color:#d3d3d3;">
+          Current Opportunities
+        </h1>
 
         <div class="job-posting">
             <img src="img/intel-logo.png">
@@ -420,6 +439,11 @@ Engineers for Exploration also has a 10-week summer paid internship available wh
         {
             color: white;
 
+        }
+
+        *{
+            font-family:Roboto Slab !important;
+        }
         }
     </style>
 
