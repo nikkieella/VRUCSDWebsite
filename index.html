@@ -16,6 +16,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/carousel.css" rel="stylesheet">
+
+
 
 <!-- IMPLEMENTATION OF FULLPAGE.JS -->
 
@@ -63,7 +66,7 @@
 
 
 
-<body>
+<body style = "background-color:black;">
 
   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
@@ -135,11 +138,11 @@
 
 
 
-    <div id="fullpage">
 
-     <div class="section" id = "section0">
+     <div class="carousel-inner" style="background-image: url('img/background.jpg'); background-repeat: no-repeat;
+    background-size: cover;background-position: center top;">
 			 <center>
-				 <h1 style="position:relative; bottom:0em;">
+				 <h1 style="position:relative; bottom: -3em;">
 			 	 	 Together We'll Build the Next Reality.
 		 		 </h1>
 			 </center>
@@ -148,39 +151,86 @@
 
            <center> <a href="https://docs.google.com/forms/d/1gUgqPcn_z0wt1cft38riUapG6BLm3gAMoFqQ-M9NCLg/viewform" class="btn btn-default btn-large" role="button"
 						 style="position:relative; background-color:transparent;
-						 color:#FFF; font-family:open sans; position:relative; bottom:2em;">
-						 Join VR Club @ UCSD</a> </center>
+						 color:#FFF; font-family:open sans; position:relative; bottom:-5em;">Join VR Club @ UCSD</a> </center>
 
 
         <div id = "actions">
-             <center> <img src = "img/Icons/down-arrow-in-small-circle.png"
+             <center> <a class="page-scroll" href="#featured"><img src = "img/Icons/down-arrow-in-small-circle.png"
                 <a id="moveSectionDown" href="#"
-								style="position:relative; bottom:-3.5em;"></a> </center>
-
+								style="position:relative; bottom:-20em;"></a> </center>
+        </div>
         </div>
 
-     </div>
-    <div class="section" id = "section1">
-
-        <div class="slide" id="slide1">
-            <center style="background-color:#d1d1e0;opacity:0.88;filter: alpha(opacity=86);">
-							<h1 style="color:black; font-size:150%;">ARt Gallery (Vuforia)</h1>
-            	<h3 style="color:black; font-size:150%;"> Interested in the process of AR app dev for mobile? Interested in helping design, propose and implement an experimental art gallery on campus? Interested in how cyborgs interpret/interact with art?</h3> </center>
-            <center> <div class="alert alert-info" role="alert">
-  If you would like more information about this project email <strong> Cliff at cpottber@ucsd.edu </strong>!
-</div> </center>
-
-
+      <h1 style = "text-align: center;" id = "featured"> Featured Projects </h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="item bg bg1">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>
+                                Note: If you're viewing this page via a
+                                <code>file://</code>
+                                URL, the "next" and "previous" Glyphicon buttons on the left and
+                                right might not load/display properly due to web browser
+                                security rules.
+                            </p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Sign
+                                    up today</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <div class="slide" id="slide2">
-            <center style="background-color:#d1d1e0;opacity:0.88;filter: alpha(opacity=86);">
-            	<h1 style="color:black; font-size:200%;">VR Video 360</h1>
-            	<h3 style="color:black; font-size:150%;">VR Club is currently in collaboration with the Communication and Theater departments to create a full film for Virtual Reality. </h3>
-            </center>
-            <center> <div class="alert alert-warning" role="alert">
-  This project is currently <strong> on hold </strong>right now, please be patient with us!
-</div> </center>
+            <div class="item">
+                <div class="item bg bg2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget
+                                quam. Donec id elit non mi porta gravida at eget metus. Nullam
+                                id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Learn
+                                    more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="item">
+                <div class="item bg bg3">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget
+                                quam. Donec id elit non mi porta gravida at eget metus. Nullam
+                                id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Browse
+                                    gallery</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button"
+            data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"></span> <span class="sr-only">Previous</span>
+        </a> <a class="right carousel-control" href="#myCarousel" role="button"
+            data-slide="next"> <span
+            class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
 
@@ -230,9 +280,13 @@ Interested in the process of AR app dev for mobile? Interested in helping design
 
 
 
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 
     <style type="text/css">
         .flex-row{
@@ -368,7 +422,36 @@ Interested in the process of AR app dev for mobile? Interested in helping design
 
         }
 
+             
+            .navbar .navbar-nav {
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+            }
+            .navbar .navbar-collapse{
+                text-align: center;
+            }
+        
 
+/*
+    .fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 150px;
+    height: 150px;
+    background: url('img/icons/chevron-left.png') no-repeat;
+    cursor: pointer;
+    }
+    .fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url('img/icons/chevron-right.png') no-repeat;
+    cursor: pointer;
+    }
+
+*/
 
 
 
