@@ -71,17 +71,17 @@ html, body {
 
 
 .carousel .carousel-inner .bg1 {
-	background-image: url(../img/bg1.jpg);
+	background-image: url(../img/anotherday.jpg);
 	background-position: center top;
 }
 
 .carousel .carousel-inner .bg2 {
-	background-image: url(../img/bg2.jpg);
+	background-image: url(../img/lucid.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-	background-image: url(../img/bg3.jpg);
+	background-image: url(../img/360Video.jpg);
 	background-position: center bottom;
 }
 
